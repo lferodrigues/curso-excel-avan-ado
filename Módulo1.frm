@@ -1,4 +1,5 @@
-Attribute VB_Name = "Módulo1"
+Attribute VB_Name = "MÃ³dulo1"
+
 Sub busca_data()
 Attribute busca_data.VB_ProcData.VB_Invoke_Func = " \n14"
 '
@@ -10,6 +11,7 @@ Attribute busca_data.VB_ProcData.VB_Invoke_Func = " \n14"
     ActiveCell.FormulaR1C1 = "=TODAY()"
     Range("G15").Select
 End Sub
+        
 Sub Inseri_dados()
 Attribute Inseri_dados.VB_ProcData.VB_Invoke_Func = " \n14"
 '
@@ -17,20 +19,21 @@ Attribute Inseri_dados.VB_ProcData.VB_Invoke_Func = " \n14"
 '
 
 '
-    Sheets("Bd-operações").Select
+    Sheets("Bd-operaÃ§Ãµes").Select
     Rows("2:2").Select
     Selection.Insert Shift:=xlDown, CopyOrigin:=xlFormatFromLeftOrAbove
     Sheets("Cadastro").Select
     Range("G9,G11,G13,G15").Select
     Range("G15").Activate
     Selection.Copy
-    Sheets("Bd-operações").Select
+    Sheets("Bd-operaÃ§Ãµes").Select
     Range("A2").Select
     Selection.PasteSpecial Paste:=xlPasteAll, Operation:=xlNone, SkipBlanks:= _
         False, Transpose:=True
     Sheets("Cadastro").Select
     Range("G9").Select
 End Sub
+                                        
 Sub limpeza()
 Attribute limpeza.VB_ProcData.VB_Invoke_Func = " \n14"
 '
