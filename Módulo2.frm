@@ -1,4 +1,5 @@
-Attribute VB_Name = "Módulo2"
+Attribute VB_Name = "MÃ³dulo2"
+
 Sub procura_vertical()
 Attribute procura_vertical.VB_ProcData.VB_Invoke_Func = " \n14"
 '
@@ -6,9 +7,10 @@ Attribute procura_vertical.VB_ProcData.VB_Invoke_Func = " \n14"
 '
 
 '
-    ActiveCell.FormulaR1C1 = "=VLOOKUP(R[-2]C,'Bd-operações'!C[-6]:C[-3],4,0)"
+    ActiveCell.FormulaR1C1 = "=VLOOKUP(R[-2]C,'Bd-operaÃ§Ãµes'!C[-6]:C[-3],4,0)"
     Range("G11").Select
 End Sub
+    
 Sub monta_tabela()
 Attribute monta_tabela.VB_ProcData.VB_Invoke_Func = " \n14"
 '
@@ -16,7 +18,7 @@ Attribute monta_tabela.VB_ProcData.VB_Invoke_Func = " \n14"
 '
 
 '
-    Sheets("Bd-operações").Select
+    Sheets("Bd-operaÃ§Ãµes").Select
     Columns("A:D").Select
     Selection.Copy
     Sheets("tmp-print").Select
@@ -40,6 +42,7 @@ Attribute monta_tabela.VB_ProcData.VB_Invoke_Func = " \n14"
         .TintAndShade = 0
     End With
 End Sub
+                                            
 Sub gera_filtro()
 Attribute gera_filtro.VB_ProcData.VB_Invoke_Func = " \n14"
 '
@@ -53,6 +56,7 @@ Attribute gera_filtro.VB_ProcData.VB_Invoke_Func = " \n14"
     Columns("M:M").EntireColumn.AutoFit
     Columns("J:J").EntireColumn.AutoFit
 End Sub
+                                                
 Sub Gera_tabela()
 Attribute Gera_tabela.VB_ProcData.VB_Invoke_Func = " \n14"
 '
